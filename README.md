@@ -21,7 +21,7 @@ Shopping list section was added for user's convenience when they are shopping.
  ***More tasks will be added as I compelte the tasks***
 
 
-## LOG ##
+## Update Log ##
 ### 10/31/2020: ###
 1. Setup completed, Built ShoppingList class that utilizes a combination of ArrayList and HashMap data structure to keep track of item names and quantity.
 2. Added Alert,Fridge, and Shopping List Fragment Layouts for different tabs/sections of the application
