@@ -1,4 +1,4 @@
-# MyFridge
+# MyFridge Android Application #
 
 ## Summary ##
 
