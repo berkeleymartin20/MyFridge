@@ -18,7 +18,7 @@ Shopping list section was added for user's convenience when they are shopping.
 - [ ] Implement an "Delete/Edit" button for users to modify their shopping lists
  - [ ] Edit TextView for the list of items in Shopping List according to added features
  
- ***More tasks will be added as I compelte the tasks***
+ ***More tasks will be added in the future***
 
 
 ## Update Log ##
