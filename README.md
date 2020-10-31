@@ -1,0 +1,2 @@
+# MyFridge
+Android Application that keeps track of your fridge inventory, as well as items' expiry dates and quantity. This project aims to reduce food waste from forgotten food in the fridge and save users' time by letting the users what they have and need when they are grocery shopping. By having a tab of expiry dates sorted by date, the user will have a better idea of what's going bad in the fridge in the near term. Shopping list section was added for user's convenience when they are shopping.
