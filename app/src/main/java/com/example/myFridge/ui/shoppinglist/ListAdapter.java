@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,7 +31,18 @@ public class ListAdapter extends RecyclerView.Adapter {
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        //add text to each card for each position
         ((ListViewHolder)holder).bindView(position);
+        ((ListViewHolder) holder).mDelete.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String item = ShoppingList.items.get(holder.getAdapterPosition());
+                ShoppingList.removeItem(item);
+                notifyItemRemoved(holder.getAdapterPosition());
+                notifyItemRangeChanged(holder.getAdapterPosition(),getItemCount());
+            }
+        });
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -40,17 +52,23 @@ public class ListAdapter extends RecyclerView.Adapter {
     }
 
     private class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private TextView mTextView;
+        private TextView mItemName;
+        private TextView mQuantity;
+        private ImageButton mDelete;
 
         public ListViewHolder(View itemView) {
             super(itemView);
-            mTextView = itemView.findViewById(R.id.itemname);
+            mItemName = itemView.findViewById(R.id.itemname);
+            mQuantity = itemView.findViewById(R.id.item_quantity);
+            mDelete = itemView.findViewById(R.id.item_delete);
             itemView.setOnClickListener(this);
         }
 
         @RequiresApi(api = Build.VERSION_CODES.N)
         public void bindView (int position) {
-            mTextView.setText(ShoppingList.getNameAndQtyInOrder(position));
+            String[] name_Qty = ShoppingList.getNameAndQtyInOrder(position);
+            mItemName.setText(name_Qty[0]);
+            mQuantity.setText("Qty: " + name_Qty[1]);
         }
 
         public void onClick(View view) {

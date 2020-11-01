@@ -3,4 +3,6 @@
     <string name="title_fridge">Fridge</string>
     <string name="title_alert">Alert</string>
     <string name="title_shoppinglist">Shopping List</string>
+    <string name="max_chars">Maximum number of characters: 20</string>
+    <string name="max_num">Enter a number between 1-999</string>
 </resources>

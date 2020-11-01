@@ -10,11 +10,11 @@
 
     <EditText
         android:id="@+id/itemname_input"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         android:background="#FFFFFF"
         android:textAlignment="center"
-        android:maxLength="15"
+        android:maxLength="20"
         android:imeOptions="actionDone"
         android:singleLine="true"
         android:hint="Enter Item Name"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemname_input"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <Button
         android:id="@+id/add_item_confirm_button"
@@ -62,5 +62,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_left_arrow_50dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_chars"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/quantity_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname_input" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_num"
+        app:layout_constraintBottom_toTopOf="@+id/add_item_confirm_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

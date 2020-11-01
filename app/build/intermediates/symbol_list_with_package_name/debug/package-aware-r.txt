@@ -1811,6 +1811,8 @@ id image
 id info
 id invisible
 id italic
+id item_delete
+id item_quantity
 id item_touch_helper_previous_elevation
 id itemname
 id itemname_input
@@ -1977,6 +1979,8 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
 id text_alert
 id text_input_end_icon
 id text_input_start_icon
@@ -2199,6 +2203,8 @@ string icon_content_description
 string item_view_role_description
 string material_slider_range_end
 string material_slider_range_start
+string max_chars
+string max_num
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_content_description

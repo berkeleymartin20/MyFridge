@@ -28,6 +28,7 @@ import java.util.ArrayList;
 public class ShoppingListFragment extends Fragment {
     private ImageButton addItemButton;
     private RecyclerView recyclerview;
+    private ImageButton deleteItemButton;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -50,8 +51,6 @@ public class ShoppingListFragment extends Fragment {
                 transaction.commit();
             }
         });
-
-
         return view;
     }
 

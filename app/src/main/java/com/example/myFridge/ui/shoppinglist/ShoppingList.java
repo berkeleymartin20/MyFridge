@@ -38,7 +38,13 @@ public class ShoppingList {
         itemsAndQty.replace(item,newNum);
     }
 
-    public static String getNameAndQtyInOrder(int i) {
-        return items.get(i) + "   Qty: " + itemsAndQty.get(items.get(i));
+    public static int getSize(){
+        return items.size();
+    }
+
+    public static String[] getNameAndQtyInOrder(int i) {
+        String item = items.get(i);
+        String[] returnThis = new String[]{item, "" +itemsAndQty.get(item)};
+        return returnThis;
     }
 }
