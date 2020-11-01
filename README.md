@@ -12,15 +12,22 @@ While applying for jobs, I wanted to keep improving and challenging myself by le
 
 ## Progress ##
 
-- [x] Initialize the overall setup, including layouts, fragments, navigation bar, Xml's for different fragments
-- [x] Customize the application to the projects theme, including icons, buttons, fragments, colors, font, and etc. 
-- [x] Implement a data structure for Shopping List to keep track of items and their quantities where the items are also accessible by their index
- - [x] Add methods to the data structure to make the items editable 
-- [x] Implement an "Add" button for users to add items and their quantities to the shopping lists
-- [ ] Implement an "Delete/Edit" button for users to modify their shopping lists
- - [x] Edit TextView for the list of items in Shopping List according to added features
-- [x] Implement AddItemFragment and its functionalities. The functions include: enter new item name, enter new quantity and submit
- - [x] Implement a data-checking algorithm to make sure the user can only add new items to the shopping list if data is entered and valid
+- [x] (Initialize) the overall setup, including layouts, fragments, navigation bar, Xml's for different fragments
+- [x] (Customize) the application to the projects theme, including icons, buttons, fragments, colors, font, and etc. 
+- [x] (Implement) a data structure for Shopping List to keep track of items and their quantities where the items are also accessible by their index
+ - [x] (Add) methods to the data structure to make the items editable 
+- [x] (Implement) an "Add" button for users to add items and their quantities to the shopping lists
+- [x] (Implement) an "Delete" button for users to modify their shopping lists
+ - [x] (Edit) TextView for the list of items in Shopping List according to added features
+- [x] (Implement) AddItemFragment and its functionalities. The functions include: enter new item name, enter new quantity and submit
+ - [x] (Implement) a data-checking algorithm to make sure the user can only add new items to the shopping list if data is entered and valid
+ - [ ] (Debug) issues with CardView Layout when duplicates are inserted. Have a pop up window with warning when submit add item button is pressed with a duplicate string name
+ - [ ] (Implement) a data saving/reloading algorithm to save and retrieve files on onPause() and onResume()
+ - [ ] (implement) a data structure to keep track of item, categories and their expiry dates
+ - [ ] (implement) a list view that sorts the data according to their categories
+ - [ ] (implement) an add item button for the fridge which navigates user to add item to fridge page
+ - [ ] (implement) a fragment where user can add item by specifying the name, expiry date, and their category
+  -[ ] (implement) a fragment where user can look up expiry date suggestion for produce items when they are adding items to the fridge list
  
  
  ***More tasks will be added in the future***
