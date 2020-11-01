@@ -27,7 +27,7 @@ While applying for jobs, I wanted to keep improving and challenging myself by le
  - [ ] (implement) a list view that sorts the data according to their categories
  - [ ] (implement) an add item button for the fridge which navigates user to add item to fridge page
  - [ ] (implement) a fragment where user can add item by specifying the name, expiry date, and their category
-  -[ ] (implement) a fragment where user can look up expiry date suggestion for produce items when they are adding items to the fridge list
+  - [ ] (implement) a fragment where user can look up expiry date suggestion for produce items when they are adding items to the fridge list
  
  
  ***More tasks will be added in the future***
