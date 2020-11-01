@@ -4,9 +4,11 @@
 
 Android Application that keeps track of your fridge inventory, as well as items' expiry dates and quantity. 
 
-This project aims to reduce food waste from forgotten food in the fridge and save users' time by letting the users what they have and need when they are grocery shopping. 
-By having a tab of expiry dates sorted by date, the user will have a better idea of what's going bad in the fridge in the near term. 
-Shopping list section was added for user's convenience when they are shopping.
+This project aims to reduce food waste from the forgotten food in the fridge while also reducing number of trips made to grocery stores by keeping a list of food in user's pantry and refrigerator and a list of shopping list made by the user. This application will also keep track of expiry dates of items, and alert the user if an item, or items will be going bad in the near future. 
+
+## Motivation ## 
+
+While applying for jobs, I wanted to keep improving and challenging myself by learning new platforms and languages. Thoroughout my four years and UC Berkeley, I only dealt with backend side of software engineering, from algorithms to data structure, to solve problems and optimize runtime and space efficiency of a program. However, after picking up JavaScript and Node.JS during the past month, I developed an interest in frontend part of software engineering - which led me to app development. Through this project, I plan on showcasing a product that combines backend side of software engineering with frontend side of software engineering to allow users to see and interact with my project.
 
 ## Progress ##
 
