@@ -1022,6 +1022,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1209,6 +1210,7 @@ dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen add_item_text_size
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1578,10 +1580,12 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_add
+drawable ic_add_to_basket
 drawable ic_alert
 drawable ic_fridge
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_left_arrow_50dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1687,6 +1691,10 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addItem_fragment
+id add_item_button
+id add_item_cancel_button
+id add_item_confirm_button
 id alertTitle
 id aligned
 id all
@@ -1800,12 +1808,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton2
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id itemname
+id itemname_input
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1885,6 +1893,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id quantity_input
 id radio
 id ratio
 id rectangles
@@ -1917,6 +1926,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id shoppinglist_fragment
 id shortcut
 id showCustom
 id showHome
@@ -2083,6 +2093,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_additem
 layout fragment_alert
 layout fragment_fridge
 layout fragment_shoppinglist

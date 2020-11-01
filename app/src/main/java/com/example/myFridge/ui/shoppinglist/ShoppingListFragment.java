@@ -5,13 +5,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,7 +26,7 @@ import com.google.android.material.snackbar.ContentViewCallback;
 import java.util.ArrayList;
 
 public class ShoppingListFragment extends Fragment {
-
+    private ImageButton addItemButton;
     private RecyclerView recyclerview;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -33,14 +36,21 @@ public class ShoppingListFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_shoppinglist, container, false);
         recyclerview = view.findViewById(R.id.recyclerview);
         ListAdapter listAdapter = new ListAdapter();
-        ShoppingList.add("water3",3);
-        ShoppingList.add("steak5",5);
-        ShoppingList.add("bread10",10);
-        ShoppingList.add("pasta3",5);
-        ShoppingList.replaceQuantity("pasta3",3);
         recyclerview.setAdapter(listAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager((getActivity()));
         recyclerview.setLayoutManager(layoutManager);
+        addItemButton = view.findViewById(R.id.add_item_button);
+        addItemButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AddItemFragment addItemFragment = new AddItemFragment();
+                ShoppingListFragment shoppingListFragment = new ShoppingListFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.shoppinglist_fragment,addItemFragment);
+                transaction.commit();
+            }
+        });
+
 
         return view;
     }

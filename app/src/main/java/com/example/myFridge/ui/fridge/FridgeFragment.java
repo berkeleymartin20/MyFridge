@@ -13,12 +13,24 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.myFridge.R;
+import com.example.myFridge.ui.alert.AlertViewModel;
 
 public class FridgeFragment extends Fragment {
 
+    FridgeViewModel fridgeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        return null;
+        fridgeViewModel =
+                ViewModelProviders.of(this).get(FridgeViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_fridge, container, false);
+        final TextView textView = root.findViewById(R.id.text_alert);
+        fridgeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textView.setText(s);
+            }
+        });
+        return root;
     }
 }

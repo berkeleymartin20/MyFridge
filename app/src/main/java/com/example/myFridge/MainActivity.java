@@ -2,9 +2,12 @@ package com.example.myFridge;
 
 import android.os.Bundle;
 
+import com.example.myFridge.ui.shoppinglist.ShoppingList;
+import com.example.myFridge.ui.shoppinglist.ShoppingListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -25,8 +28,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
-
-
+        ShoppingList sl = new ShoppingList();
     }
 
 }
