@@ -39,6 +39,6 @@ public class ShoppingList {
     }
 
     public static String getNameAndQtyInOrder(int i) {
-        return items.get(i) + "  " + itemsAndQty.get(items.get(i));
+        return items.get(i) + "   Qty: " + itemsAndQty.get(items.get(i));
     }
 }

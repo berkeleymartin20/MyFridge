@@ -109,15 +109,11 @@ public class AddItemFragment extends Fragment {
             public void onClick(View v) {
                 String itemName = nameEdit.getText().toString();
                 int quantity = Integer.parseInt(numberEdit.getText().toString());
-
-
                 ShoppingList.add(itemName,quantity);
-
                 ShoppingListFragment shoppingListFragment = new ShoppingListFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.addItem_fragment,shoppingListFragment);
+                transaction.replace(((ViewGroup)getView().getParent()).getId(),shoppingListFragment);
                 transaction.addToBackStack(null).detach(shoppingListFragment).attach(shoppingListFragment).commitAllowingStateLoss();
-                //transaction.commit();
             }
         });
         return view;
