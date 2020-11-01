@@ -16,7 +16,7 @@ Shopping list section was added for user's convenience when they are shopping.
  - [x] Add methods to the data structure to make the items editable 
 - [x] Implement an "Add" button for users to add items and their quantities to the shopping lists
 - [ ] Implement an "Delete/Edit" button for users to modify their shopping lists
- - [ ] Edit TextView for the list of items in Shopping List according to added features
+ - [x] Edit TextView for the list of items in Shopping List according to added features
 - [x] Implement AddItemFragment and its functionalities. The functions include: enter new item name, enter new quantity and submit
  - [x] Implement a data-checking algorithm to make sure the user can only add new items to the shopping list if data is entered and valid
  
