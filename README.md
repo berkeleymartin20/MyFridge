@@ -21,12 +21,12 @@ While applying for jobs, I wanted to keep improving and challenging myself by le
  - [x] (Edit) TextView for the list of items in Shopping List according to added features
 - [x] (Implement) AddItemFragment and its functionalities. The functions include: enter new item name, enter new quantity and submit
  - [x] (Implement) a data-checking algorithm to make sure the user can only add new items to the shopping list if data is entered and valid
- - [ ] (Debug) issues with CardView Layout when duplicates are inserted. Have a pop up window with warning when submit add item button is pressed with a duplicate string name
+ - [x] (Debug) issues with CardView Layout when duplicates are inserted. Have a pop up window with warning when submit add item button is pressed with a duplicate string name
  - [ ] (Implement) a data saving/reloading algorithm to save and retrieve files on onPause() and onResume()
- - [ ] (implement) a data structure to keep track of item, categories and their expiry dates
- - [ ] (implement) a list view that sorts the data according to their categories
+ - [x] (implement) a data structure to keep track of item, categories and their expiry dates
+ - [x] (implement) a RecyclerView that sorts the data according to their categories
  - [ ] (implement) an add item button for the fridge which navigates user to add item to fridge page
- - [ ] (implement) a fragment where user can add item by specifying the name, expiry date, and their category
+ - [ ] (implement) a fragment where user can add item to myFridge tab by specifying the name, expiry date, and their category
   - [ ] (implement) a fragment where user can look up expiry date suggestion for produce items when they are adding items to the fridge list
  
  
@@ -49,4 +49,10 @@ While applying for jobs, I wanted to keep improving and challenging myself by le
 2. Implemented a data-checking algorithm to make sure the user can only add new items to the shopping list if data is entered and valid
 3. Implemented navigation buttons for data entry and a "back" button to cancel item addition
 
+### 11/3/2020: ###
 
+1. Debugged issues with adding items in Shopping List beyond the screen size. Added padding to the bottom so all items can be seen
+2. Debugged issues with "Add items to Shopping List" button that blocked items' delete buttons. Users can now drag and drop to move the Add Items button in Shopping List
+3. Implemented a data structure to keep track of items' name, expiry dates, and quantity for the myFridge section
+4. Implemented a nested RecylerView with a custom Section data structure to keep track of different categories of food items and separate them into different sections in the myFridge RecyclerView
+5. Debugged issues with scrolling in myFridge, where scrolling with in the tab caused blank spaces to appear between sections 
