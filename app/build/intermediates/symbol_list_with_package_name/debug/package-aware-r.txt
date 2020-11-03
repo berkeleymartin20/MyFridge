@@ -1790,6 +1790,9 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id fridge_item_delete
+id fridge_item_edit
+id fridge_item_name
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1827,6 +1830,7 @@ id line3
 id linear
 id listMode
 id list_item
+id main_fridge_recyclerView
 id masked
 id message
 id middle
@@ -1926,6 +1930,8 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id sectionContent_RecyclerView
+id section_fridgeHeader
 id select_dialog_listview
 id selected
 id shoppinglist_fragment
@@ -2101,6 +2107,7 @@ layout fragment_additem
 layout fragment_alert
 layout fragment_fridge
 layout fragment_shoppinglist
+layout fridge_item
 layout list_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2136,6 +2143,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout section_fragment_fridge
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

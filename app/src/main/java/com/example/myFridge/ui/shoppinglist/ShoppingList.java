@@ -4,29 +4,54 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import static java.util.Map.entry;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
 
 
 @RequiresApi(api = Build.VERSION_CODES.R)
 public class ShoppingList {
 
-    static ArrayList<String> items;
-    static HashMap<String,Integer> itemsAndQty;
+    static ArrayList<Boolean> itemsChecked;
+    static ArrayList<String> items; //coded with 01 in file. This is saved to preserve order
+    static HashMap<String,Integer> itemsAndQty; //coded with 02 in file. This is saved to preserve name and qty pairs.
 
-    public ShoppingList(){
+    public ShoppingList() throws FileNotFoundException {
         items = new ArrayList<>();
         itemsAndQty = new HashMap<>();
-        /*items = new ArrayList<>(Arrays.asList("potato","pasta","tomato"));
-        itemsAndQty = new HashMap<>(Map.ofEntries(Map.entry("potato",3),Map.entry("pasta",5),Map.entry("tomato",2)));*/
+        itemsChecked = new ArrayList<>();
+
+        ShoppingList.add("a",1);
+        ShoppingList.add("b",1);
+        ShoppingList.add("c",1);
+        ShoppingList.add("d",1);
+        ShoppingList.add("e",1);
+        ShoppingList.add("f",1);
+        ShoppingList.add("g",1);
+        ShoppingList.add("h",1);
+        ShoppingList.add("i",1);
+        ShoppingList.add("j",1);
+        ShoppingList.add("k",1);
+        ShoppingList.add("l",1);
+        ShoppingList.add("m",1);
+        ShoppingList.add("n",1);
+        ShoppingList.add("o",1);
+        ShoppingList.add("p",1);
+        ShoppingList.add("q",1);
+
     }
 
     public static void add(String item, int num) {
         items.add(item);
+        itemsChecked.add(false);
         itemsAndQty.put(item,num);
     }
     public static void removeItem(String item) {
@@ -42,6 +67,12 @@ public class ShoppingList {
         return items.size();
     }
 
+    public static int getQty(String name) {
+        return itemsAndQty.get(name);
+    }
+    public static Boolean getChecked(int index) {
+        return itemsChecked.get(index);
+    }
     public static String[] getNameAndQtyInOrder(int i) {
         String item = items.get(i);
         String[] returnThis = new String[]{item, "" +itemsAndQty.get(item)};

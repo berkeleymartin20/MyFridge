@@ -1,14 +1,18 @@
 package com.example.myFridge.ui.shoppinglist;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -99,25 +103,46 @@ public class AddItemFragment extends Fragment {
             public void onClick(View v) {
                 ShoppingListFragment shoppingListFragment = new ShoppingListFragment();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.addItem_fragment,shoppingListFragment);
-                transaction.hide(AddItemFragment.this);
-                transaction.commit();
+                transaction.replace(((ViewGroup)getView().getParent()).getId(),shoppingListFragment);
+                transaction.addToBackStack(null).detach(shoppingListFragment).attach(shoppingListFragment).commitAllowingStateLoss();
             }
         });
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String itemName = nameEdit.getText().toString();
-                int quantity = Integer.parseInt(numberEdit.getText().toString());
-                ShoppingList.add(itemName,quantity);
-                ShoppingListFragment shoppingListFragment = new ShoppingListFragment();
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(((ViewGroup)getView().getParent()).getId(),shoppingListFragment);
-                transaction.addToBackStack(null).detach(shoppingListFragment).attach(shoppingListFragment).commitAllowingStateLoss();
+                if (ShoppingList.items.contains(itemName)) {
+                    Handler mhandler = new Handler();
+                    mhandler.postDelayed(new DisplayToast(getContext(), "WARNING: This item name already exists"), 200);
+                } else {
+                    int quantity = Integer.parseInt(numberEdit.getText().toString());
+                    ShoppingList.add(itemName,quantity);
+                    ShoppingListFragment shoppingListFragment = new ShoppingListFragment();
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                    transaction.replace(((ViewGroup)getView().getParent()).getId(),shoppingListFragment);
+                    transaction.addToBackStack(null).detach(shoppingListFragment).attach(shoppingListFragment).commitAllowingStateLoss();
+                }
+
             }
         });
         return view;
     }
 
+
+    public class DisplayToast implements Runnable {
+        private final Context mContext;
+        private final String mText;
+
+        public DisplayToast(Context mContext, String text) {
+            this.mContext = mContext;
+            mText = text;
+        }
+        @Override
+        public void run() {
+            Toast toastWarning = Toast.makeText(mContext, mText, Toast.LENGTH_SHORT);
+            toastWarning.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toastWarning.show();
+        }
+    }
 
 }

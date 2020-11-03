@@ -1,8 +1,10 @@
 package com.example.myFridge.ui.shoppinglist;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -27,12 +29,13 @@ import java.util.ArrayList;
 
 public class ShoppingListFragment extends Fragment {
     private ImageButton addItemButton;
+    private float dx;
+    private float dy;
     private RecyclerView recyclerview;
-    private ImageButton deleteItemButton;
 
+    @SuppressLint("ClickableViewAccessibility")
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_shoppinglist, container, false);
         recyclerview = view.findViewById(R.id.recyclerview);
@@ -41,6 +44,22 @@ public class ShoppingListFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager((getActivity()));
         recyclerview.setLayoutManager(layoutManager);
         addItemButton = view.findViewById(R.id.add_item_button);
+        addItemButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch(event.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        dx = v.getX() - event.getRawX();
+                        dy = v.getY() - event.getRawY();
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        v.setX(event.getRawX()+dx);
+                        v.setY(event.getRawY()+dy);
+                        break;
+                }
+                return false;
+            }
+        });
         addItemButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

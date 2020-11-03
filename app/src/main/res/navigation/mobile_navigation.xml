@@ -9,7 +9,7 @@
         android:id="@+id/navigation_fridge"
         android:name="com.example.myFridge.ui.fridge.FridgeFragment"
         android:label="@string/title_fridge"
-        tools:layout="@layout/fragment_fridge" />
+        tools:layout="@layout/section_fragment_fridge" />
 
     <fragment
         android:id="@+id/navigation_alert"
