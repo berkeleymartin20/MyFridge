@@ -1,5 +1,4 @@
 package com.example.myFridge.ui.shoppinglist;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -37,7 +36,7 @@ public class AddItemFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_additem,container,false);
+        View view = inflater.inflate(R.layout.fragment_shoppinglist_additem,container,false);
         backButton = view.findViewById(R.id.add_item_cancel_button);
         submitButton = view.findViewById(R.id.add_item_confirm_button);
         nameEdit = view.findViewById(R.id.itemname_input);

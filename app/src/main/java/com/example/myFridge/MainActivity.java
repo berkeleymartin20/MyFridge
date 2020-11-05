@@ -2,30 +2,28 @@ package com.example.myFridge;
 
 import android.os.Bundle;
 
-import com.example.myFridge.ui.fridge.FreezerList;
-import com.example.myFridge.ui.fridge.FridgeList;
+import com.example.myFridge.ui.fridge.FridgeFragment;
 import com.example.myFridge.ui.fridge.FridgeListAdapter;
-import com.example.myFridge.ui.fridge.MeatList;
-import com.example.myFridge.ui.fridge.ProduceList;
-import com.example.myFridge.ui.fridge.SeafoodList;
-import com.example.myFridge.ui.fridge.Section;
+import com.example.myFridge.ui.fridge.FridgeSectionAdapter;
+import com.example.myFridge.ui.fridge.fridgeCategories.FreezerList;
+import com.example.myFridge.ui.fridge.FridgeList;
+import com.example.myFridge.ui.fridge.fridgeCategories.MeatList;
+import com.example.myFridge.ui.fridge.fridgeCategories.ProduceList;
+import com.example.myFridge.ui.fridge.fridgeCategories.SeafoodList;
 import com.example.myFridge.ui.shoppinglist.ShoppingList;
-import com.example.myFridge.ui.shoppinglist.ShoppingListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static RecyclerView fridgeRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

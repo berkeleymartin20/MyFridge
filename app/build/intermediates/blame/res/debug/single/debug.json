@@ -12,6 +12,10 @@
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_fridgeadd.xml.flat",
+        "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\drawable\\ic_fridgeadd.xml"
+    },
+    {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -22,6 +26,10 @@
     {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_shoppinglist_additem.xml.flat",
+        "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\layout\\fragment_shoppinglist_additem.xml"
     },
     {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -42,6 +50,10 @@
     {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\layout_fridge_item.xml.flat",
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\layout\\fridge_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\menu_category_options_popup.xml.flat",
+        "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\menu\\category_options_popup.xml"
     },
     {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -76,10 +88,6 @@
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_additem.xml.flat",
-        "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\layout\\fragment_additem.xml"
-    },
-    {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
@@ -96,6 +104,10 @@
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\layout_fridge_edit_item.xml.flat",
+        "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\layout\\fridge_edit_item.xml"
+    },
+    {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
@@ -110,6 +122,10 @@
     {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_fridge_additem.xml.flat",
+        "source": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\src\\main\\res\\layout\\fragment_fridge_additem.xml"
     },
     {
         "merged": "C:\\Users\\berke\\AndroidStudioProjects\\myFridge\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_shoppinglist.xml.flat",

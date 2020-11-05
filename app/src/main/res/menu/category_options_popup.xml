@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/freezerOption"
+        android:title="Freezer"/>
+
+    <item
+        android:id="@+id/meatOption"
+        android:title="Meat"/>
+
+    <item
+        android:id="@+id/produceOption"
+        android:title="Produce"/>
+    <item
+        android:id="@+id/seafoodOption"
+        android:title="Seafood"/>
+</menu>

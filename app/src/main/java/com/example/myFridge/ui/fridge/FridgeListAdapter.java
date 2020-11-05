@@ -15,35 +15,29 @@ import com.example.myFridge.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FridgeListAdapter extends RecyclerView.Adapter<FridgeListAdapter.ViewHolder> {
+public class FridgeListAdapter extends RecyclerView.Adapter<FridgeListAdapter.ViewHolderList> {
 
-    List<Section> sectionList;
-    public FridgeListAdapter(List<Section> sectionList){
-        this.sectionList = sectionList;
-        setHasStableIds(true);
+    //List<Section> sectionList;
+    Section section;
+    public FridgeListAdapter(){
+        //this.sectionList = sectionList;
+        //setHasStableIds(true);
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolderList onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-
-
         View view = layoutInflater.inflate(R.layout.section_fragment_fridge,parent,false);
-
-
-        return new ViewHolder(view);
+        return new ViewHolderList(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Section section = sectionList.get(position);
+    public void onBindViewHolder(@NonNull ViewHolderList holder, int position) {
+        section = FridgeList.getSectionList().get(position);
         String sectionName = section.getSectionName();
-        List<String> items = section.getSectionItems();
-
         holder.sectionName.setText(sectionName);
-
-        FridgeSectionAdapter fridgeSectionAdapter = new FridgeSectionAdapter(items);
+        FridgeSectionAdapter fridgeSectionAdapter = new FridgeSectionAdapter(FridgeList.getSectionList().get(position).getSectionItems(),position);
         holder.sectionRecyclerView.setAdapter(fridgeSectionAdapter);
 
     }
@@ -56,20 +50,21 @@ public class FridgeListAdapter extends RecyclerView.Adapter<FridgeListAdapter.Vi
         return position;
     }
    @Override
-    public int getItemCount() {
-        return sectionList.size();
+    public int getItemCount() { return FridgeList.sectionList.size();
     }
 
 
 
-    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+    class ViewHolderList extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView sectionName;
         private RecyclerView sectionRecyclerView;
 
-        public ViewHolder(View itemView) {
+        public ViewHolderList(View itemView) {
             super(itemView);
             sectionName = itemView.findViewById(R.id.section_fridgeHeader);
             sectionRecyclerView = itemView.findViewById(R.id.sectionContent_RecyclerView);
+            sectionRecyclerView.setAnimation(null);
 
         }
         @RequiresApi(api = Build.VERSION_CODES.N)

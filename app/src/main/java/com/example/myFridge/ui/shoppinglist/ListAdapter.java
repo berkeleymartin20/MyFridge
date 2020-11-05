@@ -50,8 +50,8 @@ public class ListAdapter extends RecyclerView.Adapter {
                 String item = ShoppingList.items.get(holder.getAdapterPosition());
                 ShoppingList.itemsChecked.remove(holder.getAdapterPosition());
                 ShoppingList.removeItem(item);
-                notifyItemRemoved(holder.getAdapterPosition());
-                notifyItemRangeChanged(holder.getAdapterPosition(),getItemCount());
+                notifyItemRemoved(position);
+                notifyItemRangeChanged(position,getItemCount());
             }
         });
 
