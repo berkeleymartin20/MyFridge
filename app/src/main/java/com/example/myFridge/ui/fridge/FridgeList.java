@@ -74,19 +74,15 @@ public class FridgeList {
                     case 0:
                         //produce
                         ProduceList.removeItem(item);
-                        System.out.println(item + " removed from ProduceList");
                     case 1:
                         //meat
                         MeatList.removeItem(item);
-                        System.out.println(item + " removed from MeatList");
                     case 2:
                         //seafood
                         SeafoodList.removeItem(item);
-                        System.out.println(item + " removed from SeafoodList");
                     case 3:
                         //freezer
                         FreezerList.removeItem(item);
-                        System.out.println(item + " removed from FreezerList");
                 }
             } else {
                 pos++;
@@ -102,19 +98,15 @@ public class FridgeList {
                     case 0:
                         //produce
                         ProduceList.itemsAndQty.replace(item,qty);
-                        System.out.println(item + " changed from ProduceList");
                     case 1:
                         //meat
                         MeatList.itemsAndQty.replace(item,qty);
-                        System.out.println(item + " changed from MeatList");
                     case 2:
                         //seafood
                         SeafoodList.itemsAndQty.replace(item,qty);
-                        System.out.println(item + " changed from SeafoodList");
                     case 3:
                         //freezer
                         FreezerList.itemsAndQty.replace(item,qty);
-                        System.out.println(item + " changed from FreezerList");
                 }
             } else {
                 pos++;
@@ -140,6 +132,26 @@ public class FridgeList {
             default:
                 //For debugging
                 return 0;
+        }
+    }
+
+    public static Object[] getItemDateALArray(int sectionIndex) {
+        switch (sectionIndex){
+            case 0:
+                //produce
+                return ProduceList.itemsAndDatesAL.toArray();
+            case 1:
+                //meat
+                return MeatList.itemsAndDatesAL.toArray();
+            case 2:
+                //seafood
+                return SeafoodList.itemsAndDatesAL.toArray();
+            case 3:
+                //freezer
+                return FreezerList.itemsAndDatesAL.toArray();
+            default:
+                return null;
+
         }
     }
 

@@ -10,13 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5febe04b-477d-4088-a2fe-c9442d5b46d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/AddFridgeItemFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/EditFridgeItemFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_fridgeadd.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fridge_additem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fridge_edit_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_move_item_to_fridge.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/category_options_popup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/alert/AlertListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/alert/AlertSectionAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/PopUpMoveItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_item_bought.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/alert_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/section_fragment_alert.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -28,8 +29,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
@@ -41,43 +40,45 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/MainActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/alert/AlertFragment$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/alert/AlertFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/alert/AlertFragment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/alert/AlertViewModel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/fridge/FridgeFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/fridge/FridgeFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/fridge/FridgeViewModel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ListAdapter$ListViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ListAdapter$ListViewHolder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ListAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ListAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ShoppingList.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ShoppingList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ShoppingListFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/myFridge/ui/shoppinglist/ShoppingListFragment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/alert/AlertFragment$1.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/alert/AlertFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/alert/AlertFragment.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/alert/AlertViewModel.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/fridge/FridgeFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/fridge/FridgeFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/fridge/FridgeViewModel.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ListAdapter$ListViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ListAdapter$ListViewHolder.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ListAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ListAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ShoppingList.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ShoppingList.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ShoppingListFragment.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/myFridge/ui/shoppinglist/ShoppingListFragment.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_fridge.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_fridge.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_shoppinglist.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_shoppinglist.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout-v28_list_item.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout-v28_list_item.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_alert.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_alert.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FreezerList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/FreezerList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/alert/AlertFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/alert/AlertFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/alert/AlertViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/AddFridgeItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/AddFridgeItemFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeSectionAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeSectionAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/FridgeViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/MeatList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/MeatList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/ProduceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/ProduceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/SeafoodList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/SeafoodList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/AddItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/AddItemFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/FreezerList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/FreezerList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/MeatList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/MeatList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/ProduceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/ProduceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/SeafoodList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/SeafoodList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/ListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/ListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/ShoppingListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/ShoppingListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_additem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shoppinglist_additem.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fridge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_fridge.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shoppinglist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_shoppinglist.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fridge_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fridge_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/ShoppingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/shoppinglist/ShoppingList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-v28/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-v28/list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_alert.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_alert.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/popup_move_item_to_fridge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_move_item_to_fridge.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +105,8 @@
         <option value="layoutResourceFile_vertical" />
         <option value="Kotlin File" />
         <option value="resourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -215,6 +216,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="178" key="#Auto_Import" timestamp="1604628238695">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="178" key="#Auto_Import/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604628238695" />
     <state x="2577" y="252" key="#Customize_Data_Views" timestamp="1604231797224">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -227,85 +232,121 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2397" y="252" key="#PSD/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604180957004" />
-    <state x="2671" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604476483393">
+    <state x="2671" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1604621040036">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="501" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604097734859" />
-    <state x="2671" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604476483393" />
+    <state x="2671" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604621040036" />
     <state x="2431" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604404830567">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2431" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604404830567" />
-    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604399080503">
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604620000133">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604092371022" />
-    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604399080503" />
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604620000133" />
     <state x="2758" y="273" key="#xdebugger.XInspectDialog" timestamp="1604231699171">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2758" y="273" key="#xdebugger.XInspectDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604231699171" />
-    <state x="2635" y="223" key="#xdebugger.evaluate" timestamp="1604220923949">
+    <state x="2873" y="225" key="#xdebugger.evaluate" timestamp="1604635035855">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2635" y="223" key="#xdebugger.evaluate/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604220923949" />
+    <state x="2873" y="225" key="#xdebugger.evaluate/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604635035855" />
     <state x="2460" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1604568910545">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2460" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604568910545" />
-    <state x="2460" y="275" key="AndroidCreateResourceFileDialog" timestamp="1604570038545">
+    <state x="2460" y="275" key="AndroidCreateResourceFileDialog" timestamp="1604619797083">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2460" y="275" key="AndroidCreateResourceFileDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604570038545" />
-    <state x="2735" y="285" key="AndroidProcessChooserDialog" timestamp="1604373692827">
+    <state x="2460" y="275" key="AndroidCreateResourceFileDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604619797083" />
+    <state x="2735" y="285" key="AndroidProcessChooserDialog" timestamp="1604634221505">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2735" y="285" key="AndroidProcessChooserDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604373692827" />
-    <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1604404055674">
+    <state x="2735" y="285" key="AndroidProcessChooserDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604634221505" />
+    <state x="2552" y="147" key="FileChooserDialogImpl" timestamp="1604579587625">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604042011223" />
-    <state x="2552" y="147" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604404055674" />
-    <state width="1877" height="530" key="GridCell.Tab.0.bottom" timestamp="1604565611697">
+    <state x="2552" y="147" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604579587625" />
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.bottom" timestamp="1604630834748">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630834748" />
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.center" timestamp="1604630834747">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630834747" />
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.left" timestamp="1604630834747">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630834747" />
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.right" timestamp="1604630834748">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2152" y="309" width="1847" height="281" key="GridCell.Tab.-1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630834748" />
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom" timestamp="1604638821455">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1236" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604092700356" />
-    <state width="1877" height="530" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565611697" />
-    <state width="1877" height="530" key="GridCell.Tab.0.center" timestamp="1604565611697">
+    <state width="1877" height="337" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821455" />
+    <state width="1877" height="337" key="GridCell.Tab.0.center" timestamp="1604638821454">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1236" height="162" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604092700355" />
-    <state width="1877" height="530" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565611697" />
-    <state width="1877" height="530" key="GridCell.Tab.0.left" timestamp="1604565611696">
+    <state width="1877" height="337" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821454" />
+    <state width="1877" height="337" key="GridCell.Tab.0.left" timestamp="1604638821453">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1236" height="162" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604092700355" />
-    <state width="1877" height="530" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565611696" />
-    <state width="1877" height="530" key="GridCell.Tab.0.right" timestamp="1604565611697">
+    <state width="1877" height="337" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821453" />
+    <state width="1877" height="337" key="GridCell.Tab.0.right" timestamp="1604638821455">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1236" height="162" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1604092700356" />
-    <state width="1877" height="530" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565611697" />
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1604565077828">
+    <state width="1877" height="337" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821455" />
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.bottom" timestamp="1604638821457">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565077828" />
-    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1604565077828">
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821457" />
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.center" timestamp="1604638821456">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565077828" />
-    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1604565077827">
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821456" />
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.left" timestamp="1604638821455">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565077827" />
-    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1604565077828">
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821455" />
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.right" timestamp="1604638821456">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604565077828" />
+    <state x="1920" y="759" width="1877" height="337" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604638821456" />
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.bottom" timestamp="1604629612295">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604629612295" />
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.center" timestamp="1604629612294">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604629612294" />
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.left" timestamp="1604629612294">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604629612294" />
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.right" timestamp="1604629612294">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="731" width="1848" height="309" key="GridCell.Tab.2.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604629612294" />
     <state x="2381" y="162" key="SettingsEditor" timestamp="1604390110446">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="162" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604390110446" />
+    <state x="2690" y="298" key="chooseDestDirectoryDialog" timestamp="1604619129220">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2690" y="298" key="chooseDestDirectoryDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604619129220" />
     <state x="2012" y="92" width="1736" height="856" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1604292127620">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -319,24 +360,47 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2689" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604385401939" />
-    <state x="2576" y="118" width="607" height="804" key="find.popup" timestamp="1604175570990">
+    <state x="1920" y="731" width="1864" height="376" key="dock-window-1" timestamp="1604630761867">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2576" y="118" width="607" height="804" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604175570990" />
-    <state x="2536" y="240" key="run.anything.popup" timestamp="1604561897978">
+    <state x="1920" y="731" width="1864" height="376" key="dock-window-1/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630761867" />
+    <state x="2107" y="338" width="1864" height="376" key="dock-window-2" timestamp="1604630863650">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604561897978" />
+    <state x="2107" y="338" width="1864" height="376" key="dock-window-2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630863650" />
+    <state x="2152" y="309" width="1863" height="348" key="dock-window-3" timestamp="1604630863650">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2152" y="309" width="1863" height="348" key="dock-window-3/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604630863650" />
+    <state x="2576" y="118" width="607" height="804" key="find.popup" timestamp="1604637057558">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2576" y="118" width="607" height="804" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604637057558" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1604643359196">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604643359196" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604444121328">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604444121328" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myFridge/ui/fridge/fridgeCategories/ProduceList.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
         <watch expression="ShoppingList.itemsAndQty" language="JAVA" />
         <watch expression="ShoppingList.items" language="JAVA" custom="com.example.myFridge.ui.shoppinglist.ShoppingList" />
+        <watch expression="nameAndDatesSortedArr" language="JAVA" />
+        <watch expression="itemsAndDatesAL" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

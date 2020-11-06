@@ -17,11 +17,8 @@ import java.util.List;
 
 public class FridgeListAdapter extends RecyclerView.Adapter<FridgeListAdapter.ViewHolderList> {
 
-    //List<Section> sectionList;
     Section section;
     public FridgeListAdapter(){
-        //this.sectionList = sectionList;
-        //setHasStableIds(true);
     }
 
     @NonNull

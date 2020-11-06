@@ -11,25 +11,23 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myFridge.R;
 
 public class AlertFragment extends Fragment {
 
-    private AlertViewModel alertViewModel;
+    private RecyclerView alertRecyclerView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        alertViewModel =
-                ViewModelProviders.of(this).get(AlertViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_alert, container, false);
-        final TextView textView = root.findViewById(R.id.text_alert);
-        alertViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+        View view = inflater.inflate(R.layout.fragment_alert, container, false);
+        AlertListAdapter alertListAdapter = new AlertListAdapter();
+        alertRecyclerView = view.findViewById(R.id.main_alert_recyclerView);
+        alertRecyclerView.setAdapter(alertListAdapter);
+
+
+
+        return view;
     }
 }

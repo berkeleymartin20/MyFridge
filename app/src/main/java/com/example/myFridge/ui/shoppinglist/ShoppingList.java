@@ -20,32 +20,21 @@ import java.util.Scanner;
 @RequiresApi(api = Build.VERSION_CODES.R)
 public class ShoppingList {
 
-    static ArrayList<Boolean> itemsChecked;
-    static ArrayList<String> items; //coded with 01 in file. This is saved to preserve order
-    static HashMap<String,Integer> itemsAndQty; //coded with 02 in file. This is saved to preserve name and qty pairs.
+    public static ArrayList<Boolean> itemsChecked;
+    public static ArrayList<String> items; //coded with 01 in file. This is saved to preserve order
+    public static HashMap<String,Integer> itemsAndQty; //coded with 02 in file. This is saved to preserve name and qty pairs.
 
     public ShoppingList() throws FileNotFoundException {
         items = new ArrayList<>();
         itemsAndQty = new HashMap<>();
         itemsChecked = new ArrayList<>();
 
-        ShoppingList.add("a",1);
-        ShoppingList.add("b",1);
-        ShoppingList.add("c",1);
-        ShoppingList.add("d",1);
-        ShoppingList.add("e",1);
-        ShoppingList.add("f",1);
-        ShoppingList.add("g",1);
-        ShoppingList.add("h",1);
-        ShoppingList.add("i",1);
-        ShoppingList.add("j",1);
-        ShoppingList.add("k",1);
-        ShoppingList.add("l",1);
-        ShoppingList.add("m",1);
-        ShoppingList.add("n",1);
-        ShoppingList.add("o",1);
-        ShoppingList.add("p",1);
-        ShoppingList.add("q",1);
+        ShoppingList.add("Turkey",1);
+        ShoppingList.add("Eggs",12);
+        ShoppingList.add("Pancake Mix",1);
+        ShoppingList.add("Cooking Oil",1);
+        ShoppingList.add("Flour",2);
+        ShoppingList.add("Hot Cheetos",3);
 
     }
 

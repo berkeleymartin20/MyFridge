@@ -1582,8 +1582,10 @@ drawable design_snackbar_background
 drawable ic_add
 drawable ic_add_to_basket
 drawable ic_alert
+drawable ic_delete
 drawable ic_fridge
 drawable ic_fridgeadd
+drawable ic_item_bought
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_left_arrow_50dp
@@ -1701,6 +1703,9 @@ id add_item_fridge_cancel_button
 id add_item_fridge_submit_button
 id add_item_shopping_button
 id alertTitle
+id alert_fragment
+id alert_item_exp_date
+id alert_item_name
 id aligned
 id all
 id always
@@ -1722,6 +1727,7 @@ id bounce
 id buttonPanel
 id cache_measures
 id cancel_button
+id cancel_move_button
 id center
 id center_horizontal
 id center_vertical
@@ -1741,6 +1747,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id confirm_move_button
 id container
 id content
 id contentPanel
@@ -1847,6 +1854,7 @@ id line3
 id linear
 id listMode
 id list_item
+id main_alert_recyclerView
 id main_fridge_recyclerView
 id masked
 id meatOption
@@ -1861,6 +1869,7 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id move_item_to_fridge
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
 id mtrl_calendar_frame
@@ -1913,6 +1922,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id popup_description_moveToFridge
 id position
 id postLayout
 id produceOption
@@ -1951,6 +1961,8 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id sectionContent_RecyclerView
+id sectionContent_alert_RecyclerView
+id section_alertHeader
 id section_fridgeHeader
 id select_dialog_listview
 id selected
@@ -2008,7 +2020,6 @@ id textStart
 id textView
 id textView2
 id textView7
-id text_alert
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2110,6 +2121,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout alert_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2168,6 +2180,8 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout popup_move_item_to_fridge
+layout section_fragment_alert
 layout section_fragment_fridge
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

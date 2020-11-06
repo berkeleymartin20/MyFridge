@@ -44,6 +44,19 @@ public class ListAdapter extends RecyclerView.Adapter {
                 }
             }
         });
+
+        ((ListViewHolder)holder).mMove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String selectedItem = ShoppingList.items.get(position);
+                int selectedItemQty = ShoppingList.getQty(selectedItem);
+
+
+                PopUpMoveItem popUpMoveItem = new PopUpMoveItem();
+                popUpMoveItem.showPopUpWindow(view,selectedItem,selectedItemQty);
+            }
+        });
+
         ((ListViewHolder) holder).mDelete.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -68,6 +81,7 @@ public class ListAdapter extends RecyclerView.Adapter {
         private TextView mQuantity;
         private ImageButton mDelete;
         private CheckBox mCheckBox;
+        private ImageButton mMove;
 
         public ListViewHolder(View itemView) {
             super(itemView);
@@ -75,6 +89,7 @@ public class ListAdapter extends RecyclerView.Adapter {
             mItemName = itemView.findViewById(R.id.itemname);
             mQuantity = itemView.findViewById(R.id.item_quantity);
             mDelete = itemView.findViewById(R.id.item_delete);
+            mMove = itemView.findViewById(R.id.move_item_to_fridge);
             itemView.setOnClickListener(this);
         }
 

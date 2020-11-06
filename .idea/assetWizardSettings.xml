@@ -309,8 +309,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_fridgeadd" />
-                            <entry key="sourceFile" value="C:\Users\berke\Desktop\fridgeAdd.svg" />
+                            <entry key="outputName" value="ic_item_bought" />
+                            <entry key="sourceFile" value="C:\Users\berke\Desktop\check.svg" />
                           </map>
                         </option>
                       </PersistentState>

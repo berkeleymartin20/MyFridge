@@ -53,8 +53,17 @@ public class AddFridgeItemFragment extends Fragment {
     private boolean dateEntered;
     private boolean categoryEntered;
 
-    public AddFridgeItemFragment(){
+    private String itemNameFromSL;
+    private int itemQtyFromSL;
+    private boolean fromSL;
 
+    public AddFridgeItemFragment(){
+        fromSL = false;
+    }
+    public AddFridgeItemFragment(String name, int qty) {
+        itemNameFromSL = name;
+        itemQtyFromSL = qty;
+        fromSL = true;
     }
 
     @Nullable
@@ -69,10 +78,16 @@ public class AddFridgeItemFragment extends Fragment {
         dateEdit = view.findViewById(R.id.fridge_item_exp_date_input);
         categoryEdit = view.findViewById(R.id.fridge_item_category_input);
 
-        submitButton.setEnabled(false);
-        categoryOptions = new ArrayList<String>(Arrays.asList("Freezer","Meat","Produce","Seafood"));
         nameEntered = false;
         numberEntered = false;
+        if(fromSL) {
+            nameEdit.setText(itemNameFromSL);
+            numberEdit.setText(String.valueOf(itemQtyFromSL));
+            nameEntered = true;
+            numberEntered = true;
+        }
+        submitButton.setEnabled(false);
+        categoryOptions = new ArrayList<String>(Arrays.asList("Freezer","Meat","Produce","Seafood"));
         dateEntered = false;
         categoryEntered = false;
 
@@ -220,6 +235,9 @@ public class AddFridgeItemFragment extends Fragment {
                     Handler mhandler = new Handler();
                     mhandler.postDelayed(new AddFridgeItemFragment.DisplayToast(getContext(), "WARNING: Invalid Category!"), 200);
                 }else {
+                    if(fromSL) {
+                        ShoppingList.items.remove(itemNameFromSL);
+                    }
                     int quantity = Integer.parseInt(numberEdit.getText().toString());
                     FridgeList.add(category,itemName,quantity,LocalDate.of(year,month,day));
                     FridgeFragment fridgeFragment = new FridgeFragment();
